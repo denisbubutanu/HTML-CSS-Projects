@@ -1,0 +1,96 @@
+<!-- Standard HTML boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Minecraft figurines product landing page" />
+		<title>Crafter's Figurines</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+    <header id="header">
+			<div class="logo-title">
+				<img src="https://insighteditions.com/cdn/shop/products/86942-109666-cover_2048x2048.jpg?v=1666736398" alt="Creeper head logo" id="header-img">
+				<h1>Crafter's Figurines</h1>
+			</div>
+
+			<!-- Nav element with links to future sections -->
+			<nav id="nav-bar">
+				<ul>
+					<li><a class="nav-link" href="#Features">Features</a></li>
+					<li><a class="nav-link" href="#Video">Video</a></li>
+					<li><a class="nav-link" href="#Products">Products</a></li>
+				</ul>
+			</nav>
+		</header>
+
+    <main>
+			<h1>Hand-crafted Minecraft figurines</h1>
+
+			<form method="post" action="https://minecraft.wiki" id="form">
+					<label for="email"><input id="email" name="email" type="email" placeholder ="Enter your email address" required /></label>
+					<input type="submit" id="submit" value="Let's Go!"></input>
+			</form>
+
+			<!-- Section which gets linked to by the nav bar above -->
+			<section role="region" aria-labelledby="Features" id="Features">
+				<ul>
+					<li>Handmande figurines</li>
+					<p>Our figurines are made of the strongest wood and plastic found around! This will increase the longevity of your purchase.</p>
+					<li>Fast shipping</li>
+					<p>We make sure you recieve your figurine as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+					<li>Quality Assurance</li>
+					<p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the quality of your figurine.</p>
+				</ul>
+			</section>
+
+			<!-- Section which gets linked to by the nav bar above -->
+			<section role="region" id="Video" aria-labelledby="Video">
+				<p>Below is a review of one of our latest toys! Check it out to get a sense of what you are buying!</P>
+				<iframe src="https://www.youtube.com/watch?v=SeCVHDDGzEg" id="video"></iframe>
+			</section>
+
+			<!-- Section which gets linked to by the nav bar above -->
+			<section role="region" id="Products" aria-labelledby="Products">
+				<h2>Products</h2>
+				<p>Peruse the plothera of beautiful toys below and pick the one that speaks to you most!</p>
+
+				<!-- The below section houses div elements that will be part of display: grid -->
+				<section class="toys">
+					<div class="creeper">
+						<img src="https://m.media-amazon.com/images/I/71J9Bj6DNOL.jpg"></img>
+						<p>Creeper</p>
+					</div>
+					<div class="skeleton">
+						<img src="https://www.kroger.com/product/images/large/back/0019473530430"></img>
+					<p>Skeleteon</p>
+					</div>
+					<div class="zombie">
+						<img src="https://static.thcdn.com/images/large/original/productimg/1600/1600/11372721-1854438207848123.jpg"></img>
+						<p>Zombie</p>
+					</div>
+					<div class="herobrine">
+						<img src="https://pbs.twimg.com/media/CFkZSEgWoAAkffE?format=jpg&name=4096x4096"></img>
+						<p>Herobrine</p>
+					</div>
+					<div class="spiderjockey">
+						<img src="https://cdn11.bigcommerce.com/s-cpuexkide6/images/stencil/1280x1280/products/3898/25364/5295e862-d565-4555-9b3e-5018c6e2ee0c__90922.1714899013.jpg?c=2?imbypass=on"></img>
+						<p>Spider-Jockey</p>
+					</div>
+					<div class="enderman">
+						<img src="https://4.bp.blogspot.com/-44CGlRzd7xk/XQU6uwNOS6I/AAAAAAAAhAw/OyZZigRUXcsjNiEALVmIBUSaCD6WhPrTACLcBGAs/s1600/Enderman-Adventure-Figure-Series-2-1.jpg"></img>
+						<p>Enderman</p>
+					</div>
+				</section>
+				
+			</section>
+
+		</main>
+
+    <footer>
+		</footer>
+	</body>
+
+</html>

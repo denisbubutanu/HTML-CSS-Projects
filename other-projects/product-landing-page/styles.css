@@ -1,0 +1,173 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FAEBD7;
+  margin-top: -8px;
+  position: sticky;
+  top: 0;
+}
+
+#header-img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 22px;
+  margin-right: 10px;
+  margin-top: -15px;
+  margin-left: 20px;
+}
+
+.logo-title h1 {
+  display: inline-block;
+  font-family: Cursive;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #FAEBD7;
+}
+
+nav ul li {
+  padding: 5px;
+  background-color: #D2691E;
+}
+
+ul li a:hover {
+  color: red;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+main h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Cursive;
+}
+
+form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#email {
+  padding: 5px;
+  padding-right: 100px;
+}
+
+/* Creating the submit button with hover functionality */
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 7px 40px;
+  background-color: #D2691E;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 110%;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#Features ul li {
+  list-style: none;
+  font-size: 200%;
+  font-family: Cursive;
+}
+
+#Features p {
+  margin-bottom: 50px;
+  font-family: Cursive;
+}
+
+iframe {
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+#Features {
+  margin-top: 50px;
+}
+
+#Video {
+  margin-top: 100px;
+}
+
+#Video p {
+  text-align: center;
+  font-size: 120%;
+  font-family: serif;
+}
+
+#Products {
+  margin-top: 70px;
+}
+
+#Products h2,p {
+  text-align: center;
+  font-family: Cursive;
+}
+
+#Products p {
+  text-align: center;
+  font-size: 120%;
+}
+
+/* Used display: grid below to make a grid layout for the toys */
+.toys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.toys img {
+  width: 390px;
+  height: 390px;
+}
+
+/* Used multiple media queries below to create an authentic-feeling product landing page
+that looks good on a multitude of screens */
+@media (max-width: 600px) {
+  #Features p {
+    display: none;
+  }
+  #Features li {
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .toys {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .toys {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}

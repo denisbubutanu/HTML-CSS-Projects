@@ -1,0 +1,95 @@
+header h1, header h2 {
+  text-align: center;
+  font-weight: 1000;
+}
+
+body {
+  margin: 0 auto;
+  width: 80%;
+}
+
+h1, h2 {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+header {
+  background-color: #FFFDD0;
+  color: black;
+}
+
+#image {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+figure {
+  text-align: center;
+  margin: 50px auto;
+}
+
+/* Used display: flex to separate the nav elemnts across the screen */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 auto;
+}
+
+nav ul li a {
+  background-color: #FFFDD0;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+
+#image-description {
+  font-size: 15px;
+}
+
+#introduction {
+  font-size: 15px;
+  text-align: left;
+  font-weight: 500;
+  padding: 0px 5px;
+  margin-top: 70px;
+}
+
+header img {
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial sans-serif;
+}
+
+section h2 {
+  text-align: center;
+  border: 2px solid black;
+}
+
+/* Removed the bullet-point */
+section ul {
+  list-style: none;
+}
+
+/* Added a light-bulb before each list element instead of a bullet-point */
+section ul li::before {
+  list-style: none;
+  content: "💡";
+  margin-right: 0.5em;
+}
+
+section ul li {
+  margin-bottom: 0.5em;
+}
+
+span {
+  font-weight: 700;
+}
